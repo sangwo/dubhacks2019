@@ -1,0 +1,95 @@
+<DOCTYPE! html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta charset = "utf-8">
+    <title>bygb.co</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <!---fonts go here-->
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+    <!--script link goes here--->
+    <script>
+                  function openOverlay(){
+                document.getElementById("overlay").style.display="block";
+                  }
+
+                  function closeOverlay(){
+                  document.getElementById("overlay").style.display="none";
+                  }
+    </script>
+  </head>
+  <body>
+    <nav class="navigation" id="overlay">
+      <a href="javascript:(0)" class="navBtn" onclick="closeOverlay()">&#x274C;</a>
+      <ul class="navLinks">
+        <li><a class="navLinks" href="home.html">home</a></li>
+        <li><a class="navLinks" href="about.html">about</a></li>
+        <li><a class="navLinks" href="whatelse.html">what else</a></li>
+      </ul>
+    </nav>
+    <div class="banner">
+
+      <span onclick="openOverlay()">&#9776;</span>
+      <!---used w3schools button refernece-->
+    </br>
+    <p><h3><span style="color:red">before</span> you buy more food, did you know...</h3>
+    </div>
+      <container>
+        <header class="heroHeader section slide">
+
+        <!--insert facts about food waste here-->
+        <!--“Key Facts on Food Loss and Waste You Should Know!”
+         Food and Agriculture Organization of the United Nations,
+          www.fao.org/save-food/resources/keyfindings/en/.--->
+
+
+
+        <div class="imageHolder">
+
+
+          <p>Globally speaking, over <span style="color:red">1/3</span> of the food produced gets
+            lost or wasted each year. </br>
+            Thats approximately 1.3 billon
+            tons overall, with devloped countries wasting around 670 million
+            tons. According to the Food and Agriculture Organization, more
+            then 40% of that is <span style="color:red">lost at the consumer and retail</span>
+             level of our
+            production chain. Extra produce and food production equates to almost
+            a third of greenhouse gas emissions, a loss of over $680 per country
+            per year, and over a couple thousand litres of water.</p>
+        </div>
+      </header>
+      <section class="section slide" id="imgUpload">
+        <h1>So, what can <span style="color:red">you</span> do?</h1>
+        <p>Be a more informed consumer:</p>
+      </br>
+        <ul>
+          <li>- know where your food comes from</li>
+          <li>- plan ahead to how much you need</li>
+          <li>- calculate realistically what you will consume</li>
+          <li>- freeze, preserve, and can your leftovers</li>
+          <li>- be adventurous! As long as it is safe and edible,
+          use it in recipes</li>
+        </ul>
+        </br>
+        <p>In fact, to help you along, we created this tool
+        to help you find prospective recipes to cook with just
+      the things in your fridge.</p>
+      </br>
+
+    <p><span style="color:red">Post a picture</span> down below, and
+    start exploring!</p>
+
+        <!---image uploader goes here--->
+        <div class="uploader"></div>
+        <input class="btn enter" type = "submit" value = "Let's Start">
+      </br>
+        <img src="assets/box.jpg">
+      </section>
+    </container>
+      <footer>
+        Portions of this page &copy; 2019 Sangwon Kim and Sabrina Wang,
+        other attributions cited in document or page source.
+      </footer>
+  </body>
+</html>

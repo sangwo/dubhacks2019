@@ -1,0 +1,206 @@
+/*okay try not to go crazy hero
+remeber, it is CASCADING*/
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: black;
+  background-image: url('assets/background.jpg');
+  background-attachment:fixed;
+  background-size: cover;
+  color:white;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 30px;
+  height:100%;
+}
+.rubics{
+  background-image: url('assets/cook.jpg');
+}
+.orange{
+  background-image: url('assets/tangerines-3105628_1280.jpg');
+
+}
+
+#overlay{
+  background-color: black;
+  width:100%;
+  height:100%;
+  position:fixed;
+  z-index: 9;
+  left:0;
+  top:0;
+  overflow-x:hidden;
+  display:none;
+  /*this is how it becomes hidden*/
+}
+
+.navLinks{
+  list-style-type:none;
+  position:relative;
+  width:100%;
+    /*refernced from www.w3schools.com*/
+   /*referenced from
+   https://smallbusiness.chron.com/rid-bullets-css-44979.html*/
+}
+.navLinks a{
+  color:white;
+  float: right;
+  display: block;
+  padding:5%;
+  line-height:20vh;
+
+}
+.navLinks a:hover{
+  color:gray;
+  background-color:rgb(100,100,100);
+
+}
+.navLinks li{
+  text-align:center;
+  font-size:15vh;
+}
+.navBtn{
+  color:white;
+  font-size:5vh;
+}
+span{
+  color:white;
+  font-size:5vh;
+  cursor:pointer;
+}
+a{
+   text-decoration-line: none;
+ }
+
+.container{  /*referenced from keightclark.co.uk*/
+
+}
+.imageHolder{
+  margin-top: 150px;
+  width:100vw;
+  background-image: url('assets/headerBackground.png');
+  background-size: cover;
+  text-align: right;
+
+}
+.hydee{
+  background-image: url('assets/white.png');
+}
+header{
+  width:100vw;
+  align-content: center;
+}
+
+h1, h3, p{
+  text-align:center;
+}
+
+.logo{
+  color:red;
+  margin-top:25vh;
+  font-size: 20vw;
+}
+.quote{
+  margin: 40px;
+}
+.imageHolder p{
+  margin: 15px;
+  padding-top:40vh;
+  padding-bottom:30vh;
+  color:black;
+}
+section{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-3px) scale(1);
+  width:100%;
+  margin-top:-150px;
+  background-image: url('assets/bottomHalf.png');
+  background-size: cover;
+  text-align: center;
+}
+#recipes{
+  margin-top:20px;
+  background-image: url('assets/onion.png');
+}
+#tangy{
+  background-image: url('assets/onion.png');
+
+}
+section h1, section h1 span{
+  color:white;
+  margin-top: 20px;
+  padding-top:100px;
+  font-size: 40px;
+}
+ol{
+  text-align: left;
+  align-content: center;
+  padding-left:40vw;
+}
+li{
+  list-style-type:none;
+}
+.uploader{
+  border: 5px solid white;
+  margin:20px;
+  margin-right:10vw;
+  margin-left:10vw;
+}
+.btn {
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  background-color: red;
+  border: none;
+  font-family: 'Big Shoulders Display', cursive;
+  }
+
+section img{
+  width:100%;
+}
+
+footer{
+  background-color: black;
+  padding: 30px;
+  font-size:30px;
+  text-align: center;
+}
+input{
+  margin:10px;
+}
+
+
+
+@media screen and (min-width:1200px){
+body{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+align-items: center;
+}
+section{
+max-width:680px;
+margin-left:29vw;
+margin-right: 31vw;
+}
+.imageHolder{
+  max-width:680px;
+  margin-left:29vw;
+  margin-right: 31vw;
+}
+#recipes{
+  max-width:1100px;
+  margin-left:15vw;
+  margin-right: 17vw;
+}
+
+
+}
