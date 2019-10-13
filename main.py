@@ -10,13 +10,13 @@ RECIPE_API_URL = "https://api.spoonacular.com/recipes/findByIngredients"
 
 @app.route('/')
 def main():
-  return render_template('index2.html') # change it to index.html
+  return render_template('homeForm.html')
 
 @app.route('/recipes', methods=['POST'])
 def show_recipes():
   ingredients = request.form['ingredients']
   ingredients = ingredients.encode("ascii")
-  return render_template('results2.html', ingredients=ingredients) # change it to results.html
+  return render_template('results.html', ingredients=ingredients)
 
 @app.route('/search')
 def search_recipes():

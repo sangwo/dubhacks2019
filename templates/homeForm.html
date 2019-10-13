@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <meta charset = "utf-8">
     <title>bygb.co</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="static/stylesheet.css">
     <!---fonts go here-->
     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
-    <!--script link goes here--->
+    <!--script link goes here-->
     <script>
                   function openOverlay(){
                 document.getElementById("overlay").style.display="block";
@@ -22,9 +22,8 @@
     <nav class="navigation" id="overlay">
       <a href="javascript:(0)" class="navBtn" onclick="closeOverlay()">&#x274C;</a>
       <ul class="navLinks">
-        <li><a class="navLinks" href="home.html">home</a></li>
+        <li><a class="navLinks" href="homeForm.html">home</a></li>
         <li><a class="navLinks" href="about.html">about</a></li>
-        <li><a class="navLinks" href="whatelse.html">what else</a></li>
       </ul>
     </nav>
     <div class="banner">
@@ -40,7 +39,7 @@
         <!--insert facts about food waste here-->
         <!--“Key Facts on Food Loss and Waste You Should Know!”
          Food and Agriculture Organization of the United Nations,
-          www.fao.org/save-food/resources/keyfindings/en/.--->
+          www.fao.org/save-food/resources/keyfindings/en/.-->
 
 
 
@@ -80,23 +79,16 @@
     <p><span style="color:red">Write your foods</span> down below, and
     start exploring new ways to cook!</p>
 
-        <!---image uploader goes here--->
+        <!---image uploader goes here-->
 
           <div class="uploader">
-            <input type="text" name="item1" placeholder="item">
-            </br>
-            <input type="text" name="item2" placeholder="item">
-            </br>
-            <input type="text" name="item3" placeholder="item">
-            </br>
-            <input type="text" name="item4" placeholder="item">
-          </br>
-
-
-        </div>
-        <input class="btn enter" type = "submit" value = "Let's Start">
-      </br>
-        <img src="assets/box.jpg">
+	    <form method="post" action="{{ url_for('show_recipes') }}">
+	      <input type="text" name="ingredients" placeholder="items">
+	      <input class="btn enter" type="submit" value="Let's Start">
+	    </form>
+	  </div>
+              </br>
+        <img alt="box-of-fresh-produce-against-a-purple-wall" src="static/box.jpg">
       </section>
     </container>
       <footer>
